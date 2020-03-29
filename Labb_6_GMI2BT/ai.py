@@ -13,7 +13,7 @@ def meny ():
     print("1. Face detect and data gathering")
     print("2. Face training")
     print("3. Face recognition")
-    print("5. Quit")
+    print("4. Quit")
     svar = input("Välj ett alternativ: ")
 
     while not svar == "":
@@ -29,11 +29,7 @@ def meny ():
             face.face_detect()
             tillbaka()
             break 
-        elif svar == "4":
-            face.face_reco()
-            tillbaka()
-            break
-        elif svar == "5": 
+        elif svar == "4": 
             sys.exit(0)            
             
 def tillbaka():
